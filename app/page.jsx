@@ -1,5 +1,6 @@
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
+import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -9,12 +10,12 @@ const page = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
-          <div className="text-center xl:text-left">
+          <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
-            <h1 className="h1 mb-6">
-              Hey There! I{"'"}m<br />{" "}
+            <h2 className="h2 mb-6">
+              Hello! I{"'"}m<br />{" "}
               <span className="text-accent">Venkatesh Alampally</span>
-            </h1>
+            </h2>
             <p className="max-w-[500px] mb-9 text-white/80">
               I am a passionate software developer and I like to explore new
               things and create stuff
@@ -33,6 +34,7 @@ const page = () => {
             <Photo />
           </div>
         </div>
+      <Stats />
       </div>
     </section>
   );
