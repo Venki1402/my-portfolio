@@ -135,6 +135,7 @@ import {
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { easeIn, motion } from "framer-motion";
+import experience from "../experience/page";
 
 const resume = () => {
   return (
@@ -156,9 +157,26 @@ const resume = () => {
           </TabsList>
           {/* content */}
           <div className="min-h-[70vh] w-full">
+
+              {/* skills */}
+            <TabsContent value="skills" className="w-full">
+              <div>
+                <h3>{experience.title}</h3>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="education" className="w-full">
+            education
+            </TabsContent>
+
             <TabsContent value="certificates" className="w-full">
               certificates
             </TabsContent>
+
+            <TabsContent value="about" className="w-full">
+            about
+            </TabsContent>
+
           </div>
 
         </Tabs>
