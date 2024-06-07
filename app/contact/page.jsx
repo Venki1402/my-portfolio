@@ -1,9 +1,22 @@
-import React from 'react'
+"use client";
 
-const contact = () => {
-  return (
-    <div>contact</div>
-  )
-}
+// imports
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {FaPhoneAlt, FaEnvelope, FaMapMarkerAlt} from "react-icons/fa";
 
-export default contact
+const Contact = () => {
+  return <div>Contact</div>;
+};
+
+export default Contact;

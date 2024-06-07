@@ -1,9 +1,11 @@
 import React from 'react'
 
-const experience = () => {
+const Experience = () => {
   return (
-    <div>experience</div>
+    <div className='p-10'>
+      I{"\'"}m still a student, so I don{"\'"}t have any experience yet 😅
+    </div>
   )
 }
 
-export default experience
+export default Experience;

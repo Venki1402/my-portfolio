@@ -2,8 +2,7 @@
 
 // Imports
 import { motion } from "framer-motion";
-import { React, useState } from "react";
-// import { useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
@@ -15,7 +14,15 @@ import {
 } from "@/components/ui/tooltip";
 import Link from "next/link";
 import Image from "next/image";
-import { Description } from "@radix-ui/react-dialog";
+// import { Description } from "@radix-ui/react-dialog";
+
+
+// importing assets
+import project2048 from "../../public/assets/projects/2048.jpg";
+import projectImageEditor from "../../public/assets/projects/ImageEditor.jpg";
+import projectClock from "../../public/assets/projects/clock.jpg";
+import projectTodoList from "../../public/assets/projects/tolist.jpg";
+import projectBookLibrary from "../../public/assets/projects/bookLibrary.jpg";
 
 // Object Array
 const projectList = [
@@ -25,7 +32,7 @@ const projectList = [
     title: "2048",
     Description: "my version of the popular 2048 game",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/../public/assets/projects/2048.jpg",
+    image: { project2048 },
     live: "https://venki1402.github.io/2048/",
     github: "https://github.com/Venki1402/2048",
   },
@@ -36,7 +43,7 @@ const projectList = [
     Description:
       "A simple book library that allows you to add, delete and update books",
     stack: [{ name: "React Js" }, { name: "Spring" }, { name: "Java" }],
-    image: "/../public/assets/projects/2048.jpg",
+    image: { projectBookLibrary },
     live: "https://book-library-service.vercel.app/",
     github: "https://github.com/Venki1402/BookLibraryService",
   },
@@ -47,7 +54,7 @@ const projectList = [
     Description:
       "A simple image editor that allows you to upload an image and apply filters to it",
     stack: [{ name: "Java" }, { name: "Bash" }],
-    image: "/../public/assets/projects/ImageEditor.jpg",
+    image: { projectImageEditor },
     live: "https://github.com/Venki1402/Image_Editor",
     github: "https://github.com/Venki1402/Image_Editor",
   },
@@ -58,7 +65,7 @@ const projectList = [
     Description:
       "A simple todo list that allows you to add, delete and update tasks along with priority",
     stack: [{ name: "React Js" }],
-    image: "/../public/assets/projects/tolist.jpg",
+    image: { projectTodoList },
     live: "https://to-do-list-v1-five.vercel.app/",
     github: "https://github.com/Venki1402/to-do-list-v1",
   },
@@ -68,13 +75,13 @@ const projectList = [
     title: "Analog Clock",
     Description: "A simple analog clock that displays the current time",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/../public/assets/projects/clock.jpg",
+    image: { projectClock },
     live: "https://venki1402.github.io/analogClock/",
     github: "https://github.com/Venki1402/analogClock",
   },
 ];
 
-const projects = () => {
+const Projects = () => {
   const [project, setProject] = useState(projectList[0]);
   return (
     <motion.section
@@ -161,4 +168,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
