@@ -30,7 +30,7 @@ import { jsx } from "react/jsx-runtime";
 const about = {
   title: "About me",
   description:
-    "I'm a CS Undergrad at BITS, driven by a passion for software engineering. I am actively seeking an internship to apply and enhance my technical skills. With a strong academic background in software engineering and hands-on experience with various programming languages, I am eager to contribute to innovative projects and learn from experienced professionals. I am a quick learner, always ready to tackle new challenges and grow in the field.",
+    "I am a CS undergraduate at BITS with a passion for software engineering, actively seeking an internship to apply and enhance my skills. With a solid academic foundation and hands-on experience in multiple programming languages, I am eager to contribute to innovative projects and learn from seasoned professionals. As a quick learner, I am always ready to take on new challenges and grow in the field.",
   info: [
     {
       fieldName: "Name",

@@ -16,7 +16,6 @@ import Link from "next/link";
 import Image from "next/image";
 // import { Description } from "@radix-ui/react-dialog";
 
-
 // importing assets
 import project2048 from "../../public/assets/projects/2048.jpg";
 import projectImageEditor from "../../public/assets/projects/ImageEditor.jpg";
@@ -86,7 +85,14 @@ const Projects = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{
+        opacity: 1,
+        transition: {
+          delay: 2.4,
+          duration: 0.4,
+          ease: "easeIn",
+        },
+      }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
