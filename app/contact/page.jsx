@@ -15,6 +15,31 @@ import {
 } from "@/components/ui/select";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+// import emailJS from "@emailjs/browser";
+
+
+// mail function
+// const sendEmail = (e) => {
+//   e.preventDefault();
+
+//   emailJS
+//     .sendForm(
+      
+//       "service_2cctfng",
+//       "template_dwis9ld",
+//       e.target,
+//       "user_4q7q8qo"
+//     )
+//     .then(
+//       (result) => {
+//         console.log(result.text);
+//       },
+//       (error) => {
+//         console.log(error.text);
+//       }
+//     );
+//   e.target.reset();
+// };
 
 // data
 const info = [
@@ -34,6 +59,7 @@ const info = [
     value: "Hyderabad, India",
   },
 ];
+
 
 const Contact = () => {
   return (
