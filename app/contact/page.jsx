@@ -104,7 +104,6 @@ const Contact = () => {
                     <SelectItem value="est">FullStack development</SelectItem>
                     <SelectItem value="cst">Backend development</SelectItem>
                     <SelectItem value="mst">Frontend development</SelectItem>
-                    <SelectItem value="wst">Web development</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
