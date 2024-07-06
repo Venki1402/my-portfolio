@@ -12,8 +12,8 @@ const stats = [
     title: "Codeforces rating",
   },
   {
-    num: 15,
-    title: "Projects Completed",
+    num: 1578,
+    title: "Codechef rating",
   },
   {
     num: 167,
