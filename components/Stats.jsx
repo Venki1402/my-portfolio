@@ -8,7 +8,7 @@ const stats = [
     title: "LeetCode Problems",
   },
   {
-    num: 955,
+    num: 1059,
     title: "Codeforces rating",
   },
   {
