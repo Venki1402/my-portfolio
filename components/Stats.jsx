@@ -4,19 +4,19 @@ import CountUp from "react-countup";
 
 const stats = [
   {
-    num: 183,
+    num: 214,
     title: "LeetCode Problems",
   },
   {
-    num: 1059,
+    num: 1121,
     title: "Codeforces rating",
   },
   {
-    num: 1578,
+    num: 1721,
     title: "Codechef rating",
   },
   {
-    num: 167,
+    num: 247,
     title: "GitHub Contributions",
   },
 ];
