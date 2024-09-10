@@ -15,6 +15,8 @@ import {
   SiTypescript,
   // SiNodedotjs,
   SiTailwindcss,
+  SiCplusplus,
+  SiExpress,
 } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -25,7 +27,6 @@ import {
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { easeIn, motion } from "framer-motion";
-import { jsx } from "react/jsx-runtime";
 
 const about = {
   title: "About me",
@@ -38,7 +39,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "still learning 😁",
+      fieldValue: "SDE Intern at Dukaan",
     },
     {
       fieldName: "Nationality",
@@ -46,7 +47,7 @@ const about = {
     },
     {
       fieldName: "linktree",
-      fieldValue: "http://linktr.ee/venkatesh_alampally",
+      fieldValue: "linktr.ee/venkatesh_alampally",
     },
     {
       fieldName: "Phone",
@@ -66,6 +67,25 @@ const about = {
     },
   ],
 };
+
+const cp = [
+  {
+    fieldName: "Codeforces",
+    fieldValue: "codeforces.com/profile/Swift_ven14",
+  },
+  {
+    fieldName: "Atcoder",
+    fieldValue: "atcoder.jp/users/Swift_Ven14",
+  },
+  {
+    fieldName: "Codechef",
+    fieldValue: "codechef.com/users/venki1402",
+  },
+  {
+    fieldName: "Leetcode",
+    fieldValue: "leetcode.com/u/venki1402",
+  },
+];
 
 const education = {
   title: "My Education",
@@ -99,6 +119,22 @@ const skills = {
   description: "Here are some of the technologies I've worked with.",
   skillList: [
     {
+      icon: <SiCplusplus />,
+      name: "C++",
+    },
+    {
+      icon: <FaJava />,
+      name: "java",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
+    },
+    {
+      icon: <FaJs />,
+      name: "javascript",
+    },
+    {
       icon: <FaHtml5 />,
       name: "html 5",
     },
@@ -107,28 +143,8 @@ const skills = {
       name: "css 3",
     },
     {
-      icon: <FaJs />,
-      name: "javascript",
-    },
-    {
       icon: <FaReact />,
       name: "react.js",
-    },
-    {
-      icon: <FaJava />,
-      name: "java",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "node.js",
-    },
-    {
-      icon: <FaPython />,
-      name: "Python",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind css",
     },
     {
       icon: <SiTypescript />,
@@ -137,6 +153,18 @@ const skills = {
     {
       icon: <SiNextdotjs />,
       name: "next.js",
+    },
+    {
+      icon: <FaNodeJs />,
+      name: "node.js",
+    },
+    {
+      icon: <SiTailwindcss />,
+      name: "tailwind css",
+    },
+    {
+      icon: <SiExpress />,
+      name: "express.js",
     },
   ],
 };
@@ -160,6 +188,7 @@ const Resume = () => {
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="certificates">Certificates</TabsTrigger>
+            <TabsTrigger value="cp">CP</TabsTrigger>
             <TabsTrigger value="about">About</TabsTrigger>
           </TabsList>
 
@@ -233,7 +262,38 @@ const Resume = () => {
 
             {/* certificates */}
             <TabsContent value="certificates" className="w-full">
-              I don{"\'"}t have any certificates yet 😅
+              I don{"'"}t have any certificates yet 😅
+            </TabsContent>
+
+            {/* cp */}
+            <TabsContent value="cp" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">Competitive Programming</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  Here are my profiles on various competitive programming
+                  platforms.
+                </p>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-6  mx-auto xl:mx-0">
+                  {cp.map((item, index) => (
+                    <li
+                      key={index}
+                      className="bg-[#232329] p-4 rounded-xl flex flex-col items-center xl:items-start gap-2"
+                    >
+                      <span className="text-accent font-semibold">
+                        {item.fieldName}
+                      </span>
+                      <a
+                        href={`https://${item.fieldValue}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-accent transition-colors"
+                      >
+                        {item.fieldValue}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </TabsContent>
 
             {/* about */}

@@ -9,7 +9,7 @@ const socials = [
   },
   {
     Icon: <FaLinkedin />,
-    path: "https://www.linkedin.com/in/venkatesh-alampally-1b8528286/",
+    path: "https://www.linkedin.com/in/venkateshalampally",
   },
   {
     Icon: <FaYoutube />,
