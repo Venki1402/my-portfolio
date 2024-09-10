@@ -262,7 +262,7 @@ const Resume = () => {
 
             {/* certificates */}
             <TabsContent value="certificates" className="w-full">
-              I don{"'"}t have any certificates yet 😅
+              I don{"\'"}t have any certificates yet 😅
             </TabsContent>
 
             {/* cp */}
