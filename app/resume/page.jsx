@@ -97,17 +97,17 @@ const education = {
       duration: "2027",
     },
     {
-      institution: "Bits Pilani",
+      institution: "BITS Pilani",
       degree: "Bsc. Computer Science",
       duration: "2026",
     },
     {
-      institution: "FIITJEE School",
+      institution: "FIITJEE Madhapur",
       degree: "High School",
       duration: "2023",
     },
     {
-      institution: "Genesis School",
+      institution: "Genesis International",
       degree: "Middle School",
       duration: "2017",
     },
