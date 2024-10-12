@@ -1,9 +1,8 @@
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
-import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import DownloadCV from "@/components/DownloadCV";
 
 const page = () => {
   return (
@@ -23,15 +22,7 @@ const page = () => {
               things and create stuff
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase"
-                onClick={{}}
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <DownloadCV />
               <div className="mb-8 xl:mb-0 ">
                 <Social
                   containerStyles="flex gap-6"
