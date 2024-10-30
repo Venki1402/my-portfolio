@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 const DownloadCV = () => {
   const handleDownloadClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1Rui61bfqwqgxRG5TuOFuj3CBSgaKNTGg/view?usp=sharing",
+      "/",
       "_blank"
     );
   };
