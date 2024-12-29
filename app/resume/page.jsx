@@ -39,7 +39,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "SDE Intern at Dukaan",
+      fieldValue: "SDE intern at Allen",
     },
     {
       fieldName: "Nationality",
