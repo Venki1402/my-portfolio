@@ -71,11 +71,11 @@ const about = {
 const cp = [
   {
     fieldName: "Codeforces",
-    fieldValue: "codeforces.com/profile/Swift_ven14",
+    fieldValue: "codeforces.com/profile/venki1402",
   },
   {
     fieldName: "Atcoder",
-    fieldValue: "atcoder.jp/users/Swift_Ven14",
+    fieldValue: "atcoder.jp/users/venki1402",
   },
   {
     fieldName: "Codechef",
