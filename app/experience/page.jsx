@@ -7,12 +7,22 @@ import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 const experienceData = [
   {
-    company: "Dukaan®",
+    company: "Allen Digital",
     position: "SDE Intern",
-    duration: "August 2024 - Present",
+    duration: "November 2024 - Present",
     location: "Bengaluru, IN - Hybrid",
     description:
-      "I'm Part of the platform team on project Bot9, responsible for developing and maintaining the core platform, including backend services and front-end integration.",
+      "As a member of the Learning Material Management team at Allen Digital, I contribute to the development and enhancement of the platform's core services and features.",
+    responsibilities: [],
+    logo: "/assets/allen_digital.jpeg",
+  },
+  {
+    company: "Dukaan®",
+    position: "SDE Intern",
+    duration: "August 2024 - October 2024",
+    location: "Bengaluru, IN - Hybrid",
+    description:
+      "I was Part of the platform team on project Bot9, responsible for developing and maintaining the core platform, including backend services and front-end integration.",
     responsibilities: [
       "Contributed to Bot9 project, utilizing Next.js for frontend development and Express.js for backend services",
       "Collaborated with the platform team to enhance and maintain core services, focusing on seamless integration between backend and frontend components",
