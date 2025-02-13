@@ -16,7 +16,7 @@ const stats = [
     title: "Codechef rating",
   },
   {
-    num: 365,
+    num: 500,
     title: "GitHub Contributions",
   },
 ];
