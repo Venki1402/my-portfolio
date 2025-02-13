@@ -1,13 +1,11 @@
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import DownloadCV from "@/components/DownloadCV";
 
 const page = () => {
   return (
     <section className="h-full">
-      <SpeedInsights />
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
