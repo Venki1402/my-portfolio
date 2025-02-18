@@ -28,28 +28,17 @@ import WorkSliderButtons from "@/components/WorkSliderButtons";
 const projectList = [
   {
     num: "01",
-    category: "frontend",
-    title: "2048",
-    Description:
-      "my version of the popular 2048 game made with vanilla javascript",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: project2048,
-    live: "https://venki1402.github.io/2048/",
-    github: "https://github.com/Venki1402/2048",
-  },
-  {
-    num: "02",
     category: "fullstack",
     title: "Book Library",
     Description:
       "A simple book library that allows you to add, delete and update books",
     stack: [{ name: "React Js" }, { name: "Spring" }, { name: "Java" }],
     image: projectBookLibrary,
-    live: "https://book-library-service.vercel.app/",
+    live: "https://github.com/Venki1402/BookLibraryService",
     github: "https://github.com/Venki1402/BookLibraryService",
   },
   {
-    num: "03",
+    num: "02",
     category: "Backend",
     title: "Image Editor",
     Description:
@@ -58,6 +47,17 @@ const projectList = [
     image: projectImageEditor,
     live: "https://github.com/Venki1402/Image_Editor",
     github: "https://github.com/Venki1402/Image_Editor",
+  },
+  {
+    num: "03",
+    category: "frontend",
+    title: "2048",
+    Description:
+      "my version of the popular 2048 game made with vanilla javascript",
+    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+    image: project2048,
+    live: "https://venki1402.github.io/2048/",
+    github: "https://github.com/Venki1402/2048",
   },
   {
     num: "04",
