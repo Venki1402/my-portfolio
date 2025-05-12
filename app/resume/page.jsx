@@ -31,7 +31,7 @@ import { easeIn, motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "I am a CS undergraduate at BITS with a passion for software engineering, actively seeking an internship to apply and enhance my skills. With a solid academic foundation and hands-on experience in multiple programming languages, I am eager to contribute to innovative projects and learn from seasoned professionals. As a quick learner, I am always ready to take on new challenges and grow in the field.",
+    "I'm a CS undergrad at BITS and a passionate full-stack developer who loves building things that solve real-world problems. I take extreme ownership, move fast, and get things done—with a high-agency mindset and a builder's drive. I've worked across the stack and enjoy diving into new technologies currently exploring the edges of ML and Web3. I'm always looking to learn, ship, and improve. I'm open to internships, freelance gigs, and full-time opportunities. If you're looking for someone who's hungry to build and ready to contribute, let’s connect.",
   info: [
     {
       fieldName: "Name",
@@ -262,7 +262,7 @@ const Resume = () => {
 
             {/* certificates */}
             <TabsContent value="certificates" className="w-full">
-              {"I don\'t have any certificates yet 😅"}
+              {"I don't have any certificates yet 😅"}
             </TabsContent>
 
             {/* cp */}

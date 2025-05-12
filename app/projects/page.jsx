@@ -17,11 +17,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 // importing assets
-import project2048 from "../../public/assets/projects/2048.jpg";
 import projectImageEditor from "../../public/assets/projects/ImageEditor.jpg";
-import projectClock from "../../public/assets/projects/clock.jpg";
-import projectTodoList from "../../public/assets/projects/tolist.jpg";
-import projectBookLibrary from "../../public/assets/projects/bookLibrary.jpg";
+import projectBookLibrary from "../../public/assets/projects/demo.png";
+import projectSwiftPay from "../../public/assets/projects/swiftpay.png";
 import WorkSliderButtons from "@/components/WorkSliderButtons";
 
 // Object Array
@@ -31,7 +29,7 @@ const projectList = [
     category: "fullstack",
     title: "Book Library",
     Description:
-      "A simple book library that allows you to add, delete and update books",
+      "A book library management system that allows you to efficiently manage book loans and returns",
     stack: [{ name: "React Js" }, { name: "Spring" }, { name: "Java" }],
     image: projectBookLibrary,
     live: "https://github.com/Venki1402/BookLibraryService",
@@ -42,7 +40,7 @@ const projectList = [
     category: "Backend",
     title: "Image Editor",
     Description:
-      "A simple image editor that allows you to upload an image and apply filters to it",
+      "An image editor that allows you to upload an image and apply filters to it",
     stack: [{ name: "Java" }, { name: "Bash" }],
     image: projectImageEditor,
     live: "https://github.com/Venki1402/Image_Editor",
@@ -50,36 +48,14 @@ const projectList = [
   },
   {
     num: "03",
-    category: "frontend",
-    title: "2048",
+    category: "fullstack",
+    title: "SwiftPay",
     Description:
-      "my version of the popular 2048 game made with vanilla javascript",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: project2048,
-    live: "https://venki1402.github.io/2048/",
-    github: "https://github.com/Venki1402/2048",
-  },
-  {
-    num: "04",
-    category: "frontend",
-    title: "Todo List",
-    Description:
-      "A simple todo list that allows you to add, delete and update tasks along with priority",
-    stack: [{ name: "React Js" }],
-    image: projectTodoList,
-    live: "https://to-do-list-v1-five.vercel.app/",
-    github: "https://github.com/Venki1402/to-do-list-v1",
-  },
-  {
-    num: "05",
-    category: "frontend",
-    title: "Analog Clock",
-    Description:
-      "A simple analog clock that displays the current time made using vanilla js",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: projectClock,
-    live: "https://venki1402.github.io/analogClock/",
-    github: "https://github.com/Venki1402/analogClock",
+      "A payment gateway that allows you to make payments and receive payments",
+    stack: [{ name: "React Js" }, { name: "Node Js" }, { name: "MongoDB" }],
+    image: projectSwiftPay,
+    live: "https://swiftpay-lake.vercel.app",
+    github: "https://github.com/Venki1402/SwiftPay",
   },
 ];
 
@@ -161,24 +137,27 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="w-full xl:w-[50%]">
+          <div className="w-full xl:w-[60%]">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[520px]"
+              className="xl:h-[520px]" // Changed from 520px to 600px for better 16:9 display
               onSlideChange={handleSlideChange}
             >
               {projectList.map((project, index) => (
                 <SwiperSlide key={index} className="w-full">
                   <div className="h-[470px] relative group flex justify-center items-center bg-pink-50/20">
+                    {" "}
+                    {/* Changed from 470px to 540px */}
                     {/* overlay */}
-                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10 "></div>
+                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                     {/* image */}
                     <div className="relative w-full h-full">
                       <Image
                         src={project.image}
                         fill
                         className="object-cover"
+                        style={{ objectPosition: "top left" }}
                         alt=""
                       />
                     </div>
@@ -187,8 +166,7 @@ const Projects = () => {
               ))}
               {/* slider buttons */}
               <WorkSliderButtons
-                containerStyles="flex gap-2 absolute right-0 bottom-[calc (50%_ - _22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max
-                xl:justify-none"
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
               />
             </Swiper>
