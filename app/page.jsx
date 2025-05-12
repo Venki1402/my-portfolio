@@ -16,8 +16,8 @@ const page = () => {
               <span className="text-accent">Venkatesh Alampally</span>
             </h2>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I am a passionate software developer and I like to explore new
-              things and create stuff
+              High-agency full-stack dev. I take ownership, move fast, and build
+              end-to-end.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <DownloadCV />
