@@ -18,7 +18,7 @@ import Image from "next/image";
 
 // importing assets
 import projectImageEditor from "../../public/assets/projects/ImageEditor.jpg";
-import projectBookLibrary from "../../public/assets/projects/demo.png";
+import projectBookLibrary from "../../public/assets/projects/booklibrary.jpg";
 import projectSwiftPay from "../../public/assets/projects/swiftpay.png";
 import WorkSliderButtons from "@/components/WorkSliderButtons";
 
@@ -141,14 +141,13 @@ const Projects = () => {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[520px]" // Changed from 520px to 600px for better 16:9 display
+              className="xl:h-[520px]" 
               onSlideChange={handleSlideChange}
             >
               {projectList.map((project, index) => (
                 <SwiperSlide key={index} className="w-full">
                   <div className="h-[470px] relative group flex justify-center items-center bg-pink-50/20">
                     {" "}
-                    {/* Changed from 470px to 540px */}
                     {/* overlay */}
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                     {/* image */}
