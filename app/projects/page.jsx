@@ -18,7 +18,7 @@ import Image from "next/image";
 
 // importing assets
 import projectImageEditor from "../../public/assets/projects/ImageEditor.jpg";
-import projectBookLibrary from "../../public/assets/projects/booklibrary.jpg";
+import projectBookLibrary from "../../public/assets/projects/bookLibrary.jpg";
 import projectSwiftPay from "../../public/assets/projects/swiftpay.png";
 import WorkSliderButtons from "@/components/WorkSliderButtons";
 
