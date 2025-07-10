@@ -9,10 +9,10 @@ const experienceData = [
   {
     company: "Allen Digital",
     position: "SDE Intern",
-    duration: "November 2024 - Present",
+    duration: "November 2024 - May 2025",
     location: "Bengaluru, IN - Hybrid",
     description:
-      "As a member of the Learning Material Management team at Allen Digital, I contribute to the development and enhancement of the platform's core services and features.",
+      "I was part of the Learning Material Management team at Allen, where I worked on content workflows and tools for teachers, including building dashboards, improving content accessibility, and developing interactive learning features.",
     responsibilities: [],
     logo: "/assets/allen_digital.jpeg",
   },
