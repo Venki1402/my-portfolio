@@ -23,7 +23,7 @@ const socials = [
         ></path>
       </svg>
     ),
-    path: "https://x.com/ASaiVenkatesh1",
+    path: "https://x.com/venkitwt",
   },
   {
     Icon: <FaLinkedin />,
